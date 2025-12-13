@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Amigo</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro de Amigo</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="nome_completo">Nome Completo</label>
+                <input type="text" id="nome_completo" name="nome_completo" placeholder="Ex: Maria da Silva" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apelido">Apelido Carinhoso</label>
+                <input type="text" id="apelido" name="apelido" placeholder="Ex: Florzinha" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nível de Amizade (1 - 5 estrelas)</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="amizade_nivel" value="5" required><label for="star5" title="5 Estrelas">★</label>
+                    <input type="radio" id="star4" name="amizade_nivel" value="4"><label for="star4" title="4 Estrelas">★</label>
+                    <input type="radio" id="star3" name="amizade_nivel" value="3"><label for="star3" title="3 Estrelas">★</label>
+                    <input type="radio" id="star2" name="amizade_nivel" value="2"><label for="star2" title="2 Estrelas">★</label>
+                    <input type="radio" id="star1" name="amizade_nivel" value="1"><label for="star1" title="1 Estrela">★</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">
+                Cadastrar Amigo
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
+
+

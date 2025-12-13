@@ -1,0 +1,112 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5; /* Fundo levemente cinza para a página */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Garante que ocupe a altura total da viewport */
+            margin: 0;
+        }
+
+        /* Estilo para o contêiner do formulário */
+        .container {
+            background-color: #ffffff; /* Fundo branco interno para o formulário */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 100%;
+            max-width: 400px; /* Largura máxima para manter a elegância */
+            border: 1px solid #e0e0e0; /* Borda sutil */
+        }
+
+        /* Título do formulário */
+        .container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* Estilo para cada grupo de formulário (label + input) */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para os rótulos */
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        /* Estilo para os campos de texto */
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box; /* Inclui padding e border na largura total */
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Foco nos campos de texto */
+        .form-group input[type="text"]:focus {
+            border-color: #007bff; /* Azul vibrante no foco */
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+
+        /* Estilo para o campo de avaliação por estrelas */
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            direction: rtl; /* Inverte a ordem para facilitar a seleção CSS */
+            width: 130px; /* Largura ajustada para 5 estrelas */
+        }
+
+        /* Esconde o radio button original */
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        /* Estilo para as estrelas (usando unicode ★) */
+        .rating label {
+            color: #ccc; /* Estrela cinza (não selecionada) */
+            font-size: 24px;
+            padding: 0 2px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        /* Estilo ao passar o mouse ou selecionar */
+        .rating input[type="radio"]:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffc107; /* Amarelo ouro (selecionada/hover) */
+        }
+
+        /* Estilo para o botão de cadastro */
+        .submit-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff; /* Cor azul vibrante */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        /* Efeito hover e click no botão */
+        .submit-button:hover {
+            background-color: #0056b3; /* Azul mais escuro no hover */
+        }
+
+        .submit-button:active {
+            transform: translateY(1px); /* Pequeno movimento ao clicar */
+        }
