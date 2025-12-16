@@ -1,4 +1,6 @@
 package com.vinicin.amigos.Amigo;
 
-public interface AmigoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AmigoRepository extends JpaRepository<AmigoModel, Long> {
 }
