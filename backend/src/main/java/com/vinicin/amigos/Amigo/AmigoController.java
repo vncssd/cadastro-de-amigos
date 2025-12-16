@@ -3,17 +3,20 @@ package com.vinicin.amigos.Amigo;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-
-
+@RequestMapping
 
 public class AmigoController {
 
-    private AmigoModel amigoModel;
+    private AmigoService amigoService;
 
-    public AmigoController(AmigoModel amigoModel) {
-        this.amigoModel = amigoModel;
+    public AmigoController(AmigoService amigoService) {
+        this.amigoService = amigoService;
     }
 
-    @PostMapping("/add")
+    @PostMapping ("/add")
+    public AmigoModel criarAmigo(@RequestBody AmigoModel amigoModel){
+        return amigoService.criarAmigo(amigoModel);
+    }
+
 
 }
