@@ -10,7 +10,7 @@ public class AmigoService {
     public AmigoService(AmigoRepository amigoRepository) {
         this.amigoRepository = amigoRepository;
     }
-
+    
     public AmigoModel criarAmigo(AmigoModel amigoModel){
         return amigoRepository.save(amigoModel);
     }
